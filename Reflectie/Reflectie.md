@@ -127,7 +127,7 @@ Deze kunnen worden teruggevonden in de requirements.txt
 ## Moeilijkheden
 - Alle modules zijn afzonderlijk getest en werken. Het enige wat problemen opleverde, was ervoor te zorgen dat de taken die in de main.py met de schedule module werden uitgevoerd effectief om het uur werden getriggerd. De twee functies die hier werden ondergebracht maakten gebruik van het Repo.py bestand met Git-klasse en Check_cfg_file.py met de WordChecker-klasse. De Git-klasse zorgt voor een pull van de repository waarna de WordChecker-klasse gaat kijken of er specifieke letters aan het "trigger.txt" bestand werden toegevoegd en vervolgens de initiële aanval te triggeren. 
 - De modules op de repository zijn geëncrypteerd. In een werkelijke situatie zou de key eveneens op de repo moeten worden gezet. Wanneer de repo wordt gecloned naar de target pc zou men de modules eerst moeten decrypteren. Anders kunnen ze niet worden gebruikt. In onze situatie is dit niet van toepassing.
-
+- Ik heb geopteerd om de decrypt module op de repo niet te encrypteren. Het is tevens de enige module waar geen klasse werd van gemaakt.
 
 
 
