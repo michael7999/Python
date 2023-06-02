@@ -1,16 +1,1 @@
-import os
-
-from Encrypt_ import FileEncryptor
-
-class FolderEncryptor:
-    def __init__(self, folder_path, key_file_path):
-        self.folder_path = folder_path
-        self.key_file_path = key_file_path
-
-    def encrypt_folder(self):
-        encryptor = FileEncryptor(self.key_file_path)
-
-        for root, dirs, files in os.walk(self.folder_path):
-            for file in files:
-                file_path = os.path.join(root, file)
-                encryptor.encrypt_file(file_path)
+gAAAAABkeaqbLOUaQTlHXMAjKh5TQWmAszG3YaatRoCvw-sboPonBa5jJRir4aiNivC-JhMKSm364Bj3zqyF28Bb_LEJH2wj9CU7S0QMShw4Sn7kmI-EafKj4Sk4yX2G31RYHl2F5zN5S6oB-FYuXv37ck_GdI2-3U5bumjBGEzpDSPSWkda1nlHY4ZiQx2i-YWTYisTXq4vmDtXhM173lMebfRpwCvYisiICIP5JItQduKRa2KBkTLKrIRZMUEyZmGXHsHLbNT_kI1yFhuOgxlpmSCw9_FUMUP59zuxE1XMS9nsabPHWeNJoD8RpS-xwLEZ00QyYMCMLGSSxdtPaq4jCcfuoX8SzHgBYO42hbeDZO4ciopL0jjzNYN_KNbnkSq1_AGPuC1tebK2YinYrwxWPXCITxDTb9s0zrIyWmtZ07gMTg3JuhiIN5yO8BauAgO-I0UiKgWxAHwwab_UqFkDsFCrfqy3QxuChzc8e-V5uiN5vyPOf9FAIdLGVI7ivNjwilb1HhVgaJZB20iZJBNDOZg-VVGfIGSy7WPmCWSnCfeuRXOm8GRBxXQB7lvEVhV-zclgsE6qTxIP4rjNzkvYcvgDhK-d6S447ShIzE69P8MmyRzIwPkgXjD3_QRP4J9193PyKbMid0qyB_nh0E-1dQ6HXOrUAWA0fhmAF1MXTC9lZZnwj-vq61fgOqPZfxKK3a1FjoD5TLHtjFHheqYN21iblBmKZTyV7MTG-M2sxqCnI9Jt2Lo=

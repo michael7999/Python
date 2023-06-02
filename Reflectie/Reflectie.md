@@ -1,4 +1,6 @@
 # Project Python: Trojan
+## Link repository:
+https://github.com/michael7999/Python.git
 # Samenvatting
 - Het project bestaat uit verschillende klassen/modules. (Fictieve situatie: wanneer de gebruiker via een mail de code triggert worden de volgende stappen uitgevoerd.)
 1) Eerst wordt de code gecloned van de repository en weggeschreven naar een opgegeven locatie op de target pc, in dit geval C:/RepoClone.
@@ -37,7 +39,7 @@ Deze kunnen worden teruggevonden in de requirements.txt
 
 ### WriteKeys.py
 - Het doel van deze code is het maken van een keylogger-functionaliteit met behulp van de pynput.keyboard-module. De Listener-klasse uit deze module wordt gebruikt om toetsaanslagen te monitoren en de Keywriter-klasse wordt gebruikt om deze toetsaanslagen naar een logbestand te schrijven.
-- Windows defender verwijdert automatisch een bestand met de naam keylogger.py, daarom werd het bestand WriteKeys.py genoemd.
+- Windows antivirus verwijdert automatisch dit bstand. Het is nodig om de instellingen van antivirus aan te passen.
 
 ### Encrypt.py
 - Hierin bevindt zich de klasse FileEncryptor. 
@@ -124,6 +126,7 @@ Deze kunnen worden teruggevonden in de requirements.txt
 
 ## Moeilijkheden
 - Alle modules zijn afzonderlijk getest en werken. Het enige wat problemen opleverde, was ervoor te zorgen dat de taken die in de main.py met de schedule module werden uitgevoerd effectief om het uur werden getriggerd. De twee functies die hier werden ondergebracht maakten gebruik van het Repo.py bestand met Git-klasse en Check_cfg_file.py met de WordChecker-klasse. De Git-klasse zorgt voor een pull van de repository waarna de WordChecker-klasse gaat kijken of er specifieke letters aan het "trigger.txt" bestand werden toegevoegd en vervolgens de initiële aanval te triggeren. 
+- De modules op de repository zijn geëncrypteerd. In een werkelijke situatie zou de key eveneens op de repo moeten worden gezet. Wanneer de repo wordt gecloned naar de target pc zou men de modules eerst moeten decrypteren. Anders kunnen ze niet worden gebruikt. In onze situatie is dit niet van toepassing.
 
 
 
